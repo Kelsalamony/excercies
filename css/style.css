@@ -1,0 +1,221 @@
+* {
+  font-family: "Cairo", serif;
+}
+.title {
+  color: blue;
+
+  text-align: center;
+}
+/*
+.special {
+  color: red;
+  font-size: 40px;
+} */
+/*back-ground*/
+/* div { */
+/* background-color:red;
+    background-image:url("../images/cat.jpg");
+    background-repeat: no-repeat; */
+/* background-repeat: repeat-x; */
+/* background-repeat: repeat-y; */
+/* background-repeat: repeat; */
+/* background-position: left top; */
+/* background-position: 0px 8px; */
+/* background-position: 10% 10%; */
+/* background-size:cover; */
+/* background-size: 600px 400px; */
+/* background-size: 80% 50%; */
+
+/* } */
+/* .border {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: red;
+  text-align: center;
+} */
+/* h1{
+  visibility: hidden;
+} */
+/* .one ,
+.two ,
+.three ,
+.four{
+  border-bottom: 2px solid red;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+h1 , 
+#text{
+  color:teal;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+} */
+/* 
+div p{
+  color:rebeccapurple
+}
+div .special{
+  color: red;
+}
+.special{
+  color:blue;
+}
+p{
+  color: green;
+} */
+/* div
+{
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  
+  overflow-y: visible;
+} */
+
+/* .h1 {
+  background-color: #eee;
+  padding: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-shadow: 0 0 0 red;
+} */
+
+/* div{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: capitalize;
+  font-size:30px;
+  font-family:  inherit;
+  border: 2px solid blue;
+  padding: 20px;
+  background-color: #eee;
+}
+div p{
+  border: inherit;
+  padding: inherit;
+  font-size: inherit;
+} */
+
+/* .parent {
+  padding: 5px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.parent div {
+padding-top: 5px;
+padding-bottom: 5px;
+  background-color: #eee; 
+  width: calc((100% - 90px ) /5);
+  margin-left:15px;
+  float: left;
+}
+.clear {
+  clear: both;
+} */
+
+/* 
+.one , .two{
+text-transform: capitalize;
+padding: 10px;
+width: 200px;
+position: absolute;
+
+}
+.parent{
+  width: 500px;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  background-color: blue;
+  
+}
+
+.one{
+  background-color: red;
+  bottom:42px;
+left: 0;
+  
+}
+.two{
+  background-color: green;
+left: 0;
+bottom: 0;
+} */
+/* :root{
+  --mainColor:blue;
+}
+table{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+table, th, td {
+  border:1px solid var(--mainColor);
+  text-transform: capitalize;
+}
+
+
+img {
+  height: 40px;
+  width: 50px;
+}
+.local
+{
+  --mainColor:red;
+  color:var(--mainColor);
+} */
+
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Repeat]
+*/
+
+/* .parent .child{
+  color:red;
+}
+.parent > .child{
+  color:blue;
+} */
+
+/*
+  CSS Selectors
+  - Element + Other Element => [div + p]
+  - Element ~ Other Elements => [p ~ div]
+  - [Attribute]
+  - Element[Attribute]
+  - [Attribute=Value]
+  - Element[Attribute=Value] => input[type="submit"]
+  - [Attribute~=Value] => Contains A Word
+  - [Attribute*=Value] => Contains A Atring
+  - [Attribute^=Value] => Start With A String
+*/
+/* .parent{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top,red,green,blue);
+}
+.parent p{
+  margin: 0;
+} */

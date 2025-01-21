@@ -1,0 +1,617 @@
+// let client = {
+//   age: 20,
+//   phone: 1023078501,
+//   name: "khaled",
+// };
+// console.log(typeof client);
+// console.log(client.age);
+
+// let friends = ["ahmed", "khaled", "moahmed"];
+// console.log(friends);
+
+// console.log(hello);
+// hello.innerHTML = "Khlaed";
+// console.log("khaled");
+
+// let titleName = "Elzero",
+//   descTile = "Elzero Web School",
+//   DateTime = "25 /10 ";
+
+// let container = `<div>
+//   <h3>Hello ${titleName}</h3>
+//   <p>${descTile}</p>
+//   <span>${DateTime}</span>
+//   </div>`;
+// container = container.repeat(4);
+// document.write(container);
+
+// let numberONe = 10,
+//   numberTwo = 20;
+
+// console.log(numberONe + "" + numberTwo);
+// console.log(typeof ("numberONe" + "numberTwo"));
+// console.log(`${numberONe}${numberTwo}`);
+// console.log(typeof `${numberONe}${numberTwo}`);
+// console.log(numberTwo + "\n" + numberONe);
+// console.log(`${numberTwo}
+// ${numberONe}`);
+
+// console.log(
+//   "`" +
+//     "I am " +
+//     " " +
+//     "In" +
+//     " \n" +
+//     "\\\\" +
+//     "\n" +
+//     "Love" +
+//     " " +
+//     "\\\\" +
+//     '"""' +
+//     " ''' " +
+//     "\n" +
+//     "++" +
+//     "With" +
+//     "++"
+// );
+// console.log(`\`i am In
+// \\\\
+// Love \\\\ """ '''
+// ++ With ++ `);
+
+// let a = 21;
+// let b = 20;
+
+// console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}_`);
+// console.log("_" + `${a}_${b}`.repeat(4));
+
+// let numOne = prompt("please enter first number "),
+//   numTwo = prompt("please enter the second number ");
+// let sum;
+// sum = +numOne + +numTwo;
+// document.getElementById("result").innerHTML = sum;
+
+// let firstName = prompt("please enter first name "),
+//   lastName = prompt("please enter the second name ");
+// let fullName = `Hello ${firstName} ${lastName}`;
+// console.log(fullName);
+
+// let theTitle = "Elzero",
+//   theDescription = "Elzero Web School",
+//   theDate = "25/10";
+// let container = `<div>
+//   <h3>Hello ${theTitle}</h3>
+//   <p>${theDescription}</p>
+//   <span>${theDate}</span>
+//   </div>`;
+// container = container.repeat(4);
+// document.getElementById("result").innerHTML = container;
+
+// let num = prompt("please enter number ");
+// result = num / 2;
+// console.log(`the Half of the ${num} is ${result} `);
+
+// let mark = prompt("please enter mark ");
+// let result = mark >= 50 ? "pass" : "fail";
+// console.log(result);
+
+// let mark = prompt("please enter mark ");
+// if (mark >= 50) {
+//   console.log("pass");
+// } else {
+//   console.log("fail");
+// }
+// let num1 = parseInt(prompt("please enter the first number ")),
+//   num2 = parseInt(prompt("please enter the first number ")),
+//   num3 = parseInt(prompt("please enter the first number ")),
+//   sum = num1 + num2 + num3;
+// console.log(sum);
+
+// let n = parseInt(prompt("please enter the number of your marks ")),
+//   marks,
+//   average,
+//   sum = 0;
+// for (let i = 1; i <= n; i++) {
+//   marks = parseInt(prompt(`please enter the mark number ${i}`));
+//   sum = sum + marks;
+// }
+// average = sum / n;
+// console.log(average);
+
+// let a = 10;
+// let b = "20";
+// let c = 80;
+
+// // console.log(++a + +b++ + +c++ - +a++);
+// // console.log(++a + -b + +c++ - -a++ + +a);
+// console.log(--c + +b + --a * +b++ - +b * a + --a - +true);
+
+// let n = +prompt("Please enter the number of your marks ."),
+//   mark,
+//   average,
+//   sum = 0;
+// for (let i = 1; i <= n; i++) {
+//   mark = +prompt(`please enter the mark ${i}`);
+//   sum += mark;
+// }
+// average = sum / n;
+// console.log(`The average of your mark is ${average}`);
+// console.log(average >= 50 ? "Congratulations, you passed!" : "Unfortunately, you failed.");
+// let nums = [10, 3, 4, 1, 2,15,18];
+// for (let i = 0; i < nums.length; i++) {
+//   if (nums[i] < 5) {
+//     console.log(nums[i]);
+//   }
+// }
+/*
+  Number Challenge
+*/
+
+// let a = 100;
+// let b = 2_00.5;
+// let c = 1e2;
+// let d = 2.4;
+
+// // Find Smallest Number In All Variables And Return Integer
+// console.log(Math.trunc(Math.min(a, b, c, d)));
+
+// // Use Variables a + d One Time To Get The Needed Output
+// console.log(Math.pow(a, Math.trunc(d))); // 10000
+
+// // Get Integer "2" From d Variable With 4 Methods
+// console.log(Math.trunc(d));
+// console.log(Math.floor(d));
+// console.log(Math.round(d));
+// console.log(parseInt(d));
+
+// let a = "Khale_d_Mohame_d_Mansou_r";
+
+// console.log(a.split("_"));
+
+// let a = +prompt("please enter the number one");
+// b = +prompt("please enter the number two");
+// c = +prompt("please enter the number three");
+// if (a > b) {
+//   if (a > c) {
+//     console.log(a);
+//   }
+// } else {
+//   if (b > c) {
+//     console.log(b);
+//   } else {
+//     console.log(c);
+//   }
+// }
+
+// let a = +prompt("Please enter the first num");
+// let b = +prompt("Please enter the the second num");
+// let temp = a;
+// console.log(+a + "\n" + +b);
+// console.log((a = b));
+// console.log((b = temp));
+
+// let length = +prompt("Please enter the length of rectangle");
+// let daigonal = +prompt("Please enter the diagonal of rectangle");
+// let width = Math.sqrt(daigonal ** 2 - length ** 2);
+// area = length * width;
+// console.log(`the area of rectangle is : ${area.toFixed(3)}`);
+
+// let base = +prompt("Please entaer the base of traingle ");
+// let height = +prompt("Please enter the height of traingle");
+// area = (base * height)/2;
+// console.log(`the area of the traingle is : ${area}`);
+
+// let a = +prompt("Please entaer the daiameter of circle ");
+// let b = +prompt("Please entaer the daiameter of circle ");
+// let c = +prompt("Please entaer the daiameter of circle ");
+// let p = (a + b + c) / 2;
+// numerator = a * b * c;
+// denominator = 4 * Math.sqrt(p * (p - a) * (p - b) * (p - c));
+// area = Math.PI * (numerator / denominator) ** 2;
+// console.log(`the area of the circle is : ${area.toFixed(3)}`);
+
+// let age = +prompt("Enter the age");
+
+// for (;(age>15||age<45); ) {
+//   console.log("Invalid");
+//   age = +prompt("Enter the age again"); // Re-prompting if the age is invalid
+// }
+
+// console.log("Valid");
+
+// let price = +prompt(`enter the price of the product `);
+// let discount = prompt(`plese choose true or false `);
+// if (discount === `true`) {
+//   let discountAmount = +prompt(`please enter the value of the discountAmount`);
+//   price -= discountAmount;
+//   console.log(`price is : ${price}`);
+// } else {
+//   console.log(`price is : ${price}`);
+// }
+
+/*
+  If Condition Challenge
+*/
+
+// let a = 10;
+
+// if (a < 10) {
+//   console.log(10);
+// } else if (a >= 10 && a <= 40) {
+//   console.log("10 To 40");
+// } else if (a > 40) {
+//   console.log("> 40");
+// } else {
+//   console.log("Unknown");
+// }
+
+// Write Previous Condition With Ternary If Syntax
+// a < 10
+//   ? console.log(10)
+//   : a >= 10 && a <= 40
+//   ? console.log("10 To 40")
+//   : a > 40
+//   ? console.log("> 40")
+//   : console.log("Unknown");
+
+/*
+  Switch Challenge
+*/
+
+// if (job === "Manager") {
+//   salary = 8000;
+// } else if (job === "IT" || job === "Support") {
+//   salary = 6000;
+// } else if (job === "Developer" || job === "Designer") {
+//   salary = 7000;
+// } else {
+//   salary = 4000;
+// }
+// let job = "engineer";
+// let salary = 0;
+
+// switch (job) {
+//   case "Manger":
+//     salary = 8000;
+//     console.log(salary);
+//     break;
+//   case "IT":
+//   case "Support":
+//     salary = 6000;
+//     console.log(salary);
+//     break;
+//   case "Developer":
+//   case "Designer":
+//     salary = 7000;
+//     console.log(salary);
+//     break;
+//   default:
+//     console.log("job not found");
+// }
+/*
+  If Challenge
+*/
+
+let holidays = 10;
+let money = 0;
+
+// switch (holidays) {
+//   case 0:
+//     money = 5000;
+//     console.log(`My Money is ${money}`);
+//     break;
+//   case 1:
+//   case 2:
+//     money = 3000;
+//     console.log(`My Money is ${money}`);
+//     break;
+//   case 3:
+//     money = 2000;
+//     console.log(`My Money is ${money}`);
+//     break;
+//   case 4:
+//     money = 1000;
+//     console.log(`My Money is ${money}`);
+//     break;
+//   case 5:
+//     money = 0;
+//     console.log(`My Money is ${money}`);
+//     break;
+//   default:
+//     money = 0;
+//     console.log(`My Money is ${money}`);
+// }
+// if (holidays == 0) {
+//   money = 5000;
+//   console.log(`My Money is ${money}`);
+// } else if (holidays == 1 || holidays == 2) {
+//   money = 3000;
+//   console.log(`My Money is ${money}`);
+// } else if (holidays == 3) {
+//   money = 2000;
+//   console.log(`My Money is ${money}`);
+// } else if (holidays == 4) {
+//   money = 1000;
+//   console.log(`My Money is ${money}`);
+// } else if (holidays == 5) {
+//   money = 0;
+//   console.log(`My Money is ${money}`);
+// } else {
+//   money = 0;
+//   console.log(`My Money is ${money}`);
+// }
+// console.log(100 == "100"); // true
+// console.log(100< 1000); // true
+// console.log(110 > 100 || 10 > 20); // true
+// console.log(-10 == "-10"); // true
+// console.log(typeof -50 === typeof +"-40"); // true
+// console.log(typeof 10 === typeof -"-40"); // true
+// console.log(+"10" === 10); // true
+// console.log(20 > false); // true
+// let num1 = 10;
+// let num2 = 20;
+
+// console.log(10<20); // true
+// console.log(20>10); // true
+// console.log(typeof num1 === typeof num2); // true
+
+// let a = 20;
+// let b = 30;
+// let c = 10;
+
+// console.log(a < b && a > c || a < b); // true
+// console.log(a < b || a > c); // true
+// console.log(!(a > b) && !(a > b) && !(a < c) && !(a < c)); // true
+// Test Case 1
+
+// let num = 9; // "009"
+
+// // Test Case 2
+// let num = 20; // "020"
+
+// // Test Case 3
+// let num = 110; // "110"
+// let num1 = 9;
+// if (num1 < 10) {
+//   console.log(`00${num1}`);
+// }
+// let num2 = 20;
+// if (num2 > 10 && num2 < 100) {
+//   console.log(`0${num2}`);
+// }
+// let num3 = 110;
+// if (num3 >= 100) {
+//   console.log(num3);
+// }
+
+// let num1 = 9;
+// let str = "9";
+// let str2 = "20";
+// if (num1 == str) {
+//   console.log(`${num1} Is The Same Value As ${str}`);
+// }
+// if (num1 !== str) {
+//   console.log(`${num1} Is The Same Value As ${str} But Not The Same Type`);
+// }
+// if (num1 !== str2) {
+//   console.log(`${num1} Is Not The Same Value Or The Same Type As ${str2}`);
+// }
+// if (typeof str == typeof str2) {
+//   console.log(`${str} Is The Same Type As ${str2} But Not The Same Value`);
+// }
+
+// Output
+// "{num1} Is The Same Value As {str}"
+// "{num1} Is The Same Value As {str} But Not The Same Type"
+// "{num1} Is Not The Same Value Or The Same Type As {str2}"
+// "{str} Is The Same Type As {str2} But Not The Same Value"
+
+// Edit What You Want Here
+
+// let num1 = 5;
+// let num2 = 11;
+// let num3 = 5;
+// let num4 = 20;
+
+/*
+  Do Not Edit Below This Line
+  Needed Output
+  True 7 Times
+*/
+
+// Condition 1
+
+// if (num1 > num2) {
+//   console.log("True");
+// } else {
+//   console.log("False");
+// }
+
+// Condition 2
+
+// if (num1 > num2 && num1 < num4) {
+//   console.log("True");
+// } else {
+//   console.log("False");
+// }
+
+// // Condition 3
+
+// if (num1 > num2 && num1 === num3) {
+//   console.log("True");
+// } else {
+//   console.log("False");
+// }
+
+// // Condition 4
+
+// if ((num1 + num2) < num4) {
+//   console.log("True");
+// } else {
+//   console.log("False");
+// }
+
+// // Condition 5
+
+// if ((num1 + num3) < num4) {
+//   console.log("True");
+// } else {
+//   console.log("False");
+// }
+
+// // Condition 6
+
+// if ((num1 + num2 + num3) < num4) {
+//   console.log("True");
+// } else {
+//   console.log("False");
+// }
+
+// // Condition 7
+
+// if (num4 - (num1 + num3) + num2 === 21) {
+//   console.log("True");
+// } else {
+//   console.log("False");
+// }
+
+// let day = "   friday  ";
+// reslut =day.trim().charAt(0).toUpperCase() + day.trim().slice(1);
+// console.log(reslut);
+
+// let day = prompt("please enter your day ");
+// reslut = day.trim().charAt(0).toUpperCase() + day.trim().slice(1);
+// // let day = "Saturday";
+// // let day = "Sunday";
+// // Output => "No Appointments Available"
+// switch (reslut) {
+//   case "Friday":
+//   case "Saturday":
+//   case "Sunday":
+//     console.log(`No Appointments Available`);
+//     break;
+//   case "Monday":
+//   case "Thursday":
+//     console.log("From 10:00 AM To 5:00 PM");
+//     break;
+//   case "Tuesday":
+//     console.log("From 10:00 AM To 6:00 PM");
+//     break;
+//   case "Wednesday":
+//     console.log("From 10:00 AM To 7:00 PM");
+//     break;
+//   default:
+//     console.log("Its Not A Valid Day");
+// }
+// let day = "Monday";
+// let day = "Thursday";
+// // Output => "From 10:00 AM To 5:00 PM"
+
+// let day = "Tuesday";
+// // Output => "From 10:00 AM To 6:00 PM"
+
+// let day = "Wednesday";
+// // Output => "From 10:00 AM To 7:00 PM"
+
+// let day = "World";
+// // Output => "Its Not A Valid Day"
+
+// n = +prompt(`Pease enter the number`);
+// if (n % 2 != 0) {
+//   for (i = n; i >= 1; i--) {
+//     if (i % 2 != 0) {
+//       console.log(i);
+//     }
+//   }
+// } else {
+//   for (i = n - 1; i >= 1; i--) {
+//     if (i % 2 != 0) {
+//       console.log(i);
+//     }
+//   }
+// }
+// let start = n % 2 !== 0 ? n : n - 1;
+// for (i = start; i >= 1; i--) {
+//       if (i % 2 != 0) {
+//        console.log(i);
+//      }
+// }
+// let sum = 0;
+// for (i = 1; i <= n; i++) {
+//   if (i % 2 === 0) {
+//     sum += i;
+//   }
+// }
+// console.log(sum);
+
+// for (i = 1; i <= n; i++) {
+//   if (i % 2 !== 0) {
+//     sum += i;
+//   }
+// }
+// console.log(sum);
+
+// let freinds = ["ahmed", "mohamed", "sayed"];
+// let result=freinds.slice();
+// console.log(result);
+
+/*
+  Array Challenge
+*/
+
+// let zero = 0;
+
+// let counter = 3;
+
+// let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ameer"];
+
+// // Write Code Here
+// my.reverse();
+// my.shift();
+// my.shift();
+// console.log(my); // ["Osama", "Elham", "Mazero", "Ahmed"];
+
+// my.shift();
+// my.pop();
+// console.log(my.slice(zero, counter)); // ["Elham", "Mazero"]
+// let result = my[0].slice(0, my[0].indexOf("h")) + my[1].slice(my[1].indexOf("z"))
+
+// console.log(result);//ElhamMazero
+
+// let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
+// let num = 3;
+
+// // Method 1
+// myFriends.pop()
+// console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
+
+// // Method 2
+// myFriends.splice(num)
+// console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
+
+// let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+
+// friends.pop()
+// friends.shift()
+// console.log(friends); // ["Eman", "Osama"]
+
+// let arrOne = ["C", "D", "X"];
+// let arrTwo = ["A", "B", "Z"];
+// let finalArr = [];
+
+// finalArr = arrOne.concat(arrTwo);
+// finalArr.sort().reverse();
+// console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
+let num = +prompt(`Please enter the num`);
+let factorial = 1;
+let reslut = "";
+for (i = num; i >= 1; i -= 1) {
+  if (i === num) {
+    reslut += `${i}`;
+  } else {
+    reslut += ` X ${i}`;
+  }
+  factorial *= i;
+}
+let finalResult = `The Factorial for ${num} is : ${reslut} = ${factorial}`;
+document.write(finalResult);
