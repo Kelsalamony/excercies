@@ -602,16 +602,313 @@ let money = 0;
 // finalArr = arrOne.concat(arrTwo);
 // finalArr.sort().reverse();
 // console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
-let num = +prompt(`Please enter the num`);
-let factorial = 1;
-let reslut = "";
-for (i = num; i >= 1; i -= 1) {
-  if (i === num) {
-    reslut += `${i}`;
-  } else {
-    reslut += ` X ${i}`;
-  }
-  factorial *= i;
+// let num = +prompt(`Please enter the num`);
+// let powerNum = +prompt(`Please enter the power num`);
+// // for (i = 2; i <= powerNum; i++) {
+//   console.log(`${num} ^ ${powerNum} = ${num ** powerNum}`);
+// }
+
+// let grade = +prompt(`Please enter the grade`);
+// grade < 100 && grade >= 90
+//   ? console.log("A")
+//   : grade < 89 && grade >= 80
+//   ? console.log("b")
+//   : grade < 79 && grade >= 70
+//   ? console.log("c")
+//   : grade < 69 && grade >= 60
+//   ? console.log("d")
+//   : grade < 59 && grade >= 50
+//   ? console.log("e")
+//   : console.log("F");
+// let list = [
+//   "Ahmed",
+//   100,
+//   1000,
+//   "Mazero",
+//   "Elham",
+//   "Osama",
+//   10,
+//   14,
+//   "Gamal",
+//   "Ameer",
+//   1,
+//   2,
+//   3,
+// ];
+// let onlyNames = [];
+// for (i = 0; i < list.length; i++) {
+//   if (typeof list[i] === "number") {
+//     onlyNames.push(list[i]);
+//   }
+// }
+// console.log(onlyNames);
+
+/*
+  Loop
+  - Nested Loops
+*/
+
+/*
+  Products Practice
+*/
+
+// let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iPhone"];
+// let colors = ["Red", "Green", "Blue"];
+// let showCount = 2;
+// for (i = 0; i <= showCount; i++) {
+//   document.write(`${products[i]}<br/>`);
+//   for (j = 0; j < colors.length; j++) {
+//     document.write(`${colors[j]}<br/>`);
+//   }
+// }
+
+// let start = 10;
+// let end = 100;
+// let exclude = 40;
+
+// for(i=start;i<=end;i+=start){
+//   if(i===exclude){
+//     continue;
+//   }
+//   console.log(i);
+
+// }
+// // Output
+// 10
+// 20
+// 30
+// 50
+// 60
+// 70
+// 80
+// 90
+// 100
+
+// let start = 10;
+// let end = 0;
+// let stop = 3;
+// for (i = start; i >= stop; i--) {
+//   if (i === start) {
+//     console.log(start);
+//   } else {
+//     console.log(`${end}${i}`);
+//   }
+// }
+// // Output
+// // 10
+// // 09
+// // 08
+// // 07
+// // 06
+// // 05
+// // 04
+// // 03
+
+// let index = 10;
+// let jump = 2;
+
+// for (;;) {
+//   if(index<=jump) break;
+// console.log(index);
+// index-=jump
+// }
+
+// // Output
+// // 10
+// // 8
+// // 6
+// // 4
+
+// let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+// let letter = "a";
+
+// for (i = 0; i < friends.length; i++) {
+//   if (friends[i][0] === letter.toUpperCase()) continue;
+//   console.log(`"${i} => ${friends[i]}`);
+// }
+// // Output
+// // "1 => Sayed"
+// // "2 => Eman"
+// // "3 => Mahmoud"
+// // "4 => Osama"
+// // "5 => Sameh"
+
+/*
+  Loop Challenge
+*/
+
+// let myAdmins = ["Ahmed", "Osama", "Sayed", "Stop", "Samera"];
+// let myEmployees = [
+//   "Amgad",
+//   "Samah",
+//   "Ameer",
+//   "Omar",
+//   "Othman",
+//   "Amany",
+//   "Samia",
+//   "Anwar",
+// ];
+// let showCount = +prompt(`please enter the number of admin/s you have `);
+// let mainMessage = `<div style="padding-left:20px">We Have ${showCount} Admins</div> <br/>`;
+// let adminContent = ``;
+// let employeesContent = ``;
+// for (i = 0; ; i++) {
+//   if (myAdmins[i] === "Stop") break;
+//   adminContent += `<div style="padding-left:20px"><hr>
+//   <p>The Admin For Team ${i + 1} Is ${myAdmins[i]}</p>
+//   <p style="font-size: 25px; font-weight:bold">Team Members:</p>
+//   </div> `;
+//   let memberCount = 1;
+//   for (j = 0; j < myEmployees.length; j++) {
+//     if (myEmployees[j][0] === myAdmins[i][0]) {
+//       adminContent += `<div style="padding-left:20px">
+//       <p>- ${memberCount} ${myEmployees[j]}</p>
+//       </div>`;
+//       memberCount++;
+//     }
+//   }
+// }
+// document.write(mainMessage);
+// document.write(adminContent);
+
+// function sayHello(userName) {
+//   document.write(`Hello ${userName}`);
+// }
+// sayHello(`Khaled`);
+
+// function sumTwoNumber(num1, num2) {
+//   let sum = num1 + num2;
+//   return sum;
+// }
+// let content = ``;
+// for (let i = 0; i < 4; i++) {
+//   content += `${sumTwoNumber(4, 4)} <br>`;
+// }
+// document.write(content);
+
+// function greet(name) {
+//   console.log(`Hello ${name}`);
+// }
+// greet(`khaled`);
+
+// function sum(num1, num2) {
+//   result = num1 + num2;
+//   console.log(`the sum of ${num1} + ${num2} = ${result}`);
+//   return sum;
+// }
+// sum(2,3);
+
+// function isEven(num) {
+//   if (num % 2 == 0) {
+//     console.log(`true`);
+//   } else {
+//     console.log(`false`);
+//   }
+// }
+// isEven(4);
+// isEven(189);
+
+// function findLargest(num1, num2, num3) {
+//   if (num1 > num2 && num1 > num3) {
+//     return `the ${num1} is the largest number `;
+//   } else if (num2 > num1 && num2 > num3) {
+//     return `the ${num2} is the largest number `;
+//   } else if (num3 > num1 && num3 > num2) {
+//     return `the ${num3} is the largest number `;
+//   } else {
+//     return `the ${num1} , ${num2} and ${num3} Are Eaual`;
+//   }
+// }
+// console.log(findLargest(390, 390, 390));
+
+// function repeatWords(word, times) {
+//   let result = ``;
+//   for (let i = 1; i <= times; i++) {
+//     result += `${word} `;
+//   }
+//   return result;
+// }
+// document.write(repeatWords(`Khaled`, 3));
+
+// function sumArray(arr) {
+//   let sum = 0;
+//   if (Array.isArray(arr)) {
+//     for (i = 0; i < arr.length; i++) {
+//       sum += arr[i];
+//     }
+//   } else {
+//     return `your input it is not valid`;
+//   }
+//   return sum;
+// }
+// console.log(sumArray([2, 3, 5]));
+// console.log(sumArray("Hello"));
+
+// function genrateYears(yearToStart, yearToEnd, counter) {
+//   content = ``;
+//   for (let i = yearToStart; i <= yearToEnd; i += counter) {
+//     content += `${i} <br>`;
+//   }
+//   return content;
+// }
+// document.write(genrateYears(2000, 2030, 6));
+
+// function genrateYears(yearToStart, yearToEnd, exclude , counter) {
+//   content = ``;
+//   for (let i = yearToStart; i <= yearToEnd; i +=counter) {
+//     if (i === exclude) continue;
+//     content += `${i} <br>`;
+//   }
+//   return content;
+// }
+// document.write(genrateYears(2000, 2030, 2030 ,5));
+
+// console.log(4+4+" "+" 5");
+// function sayHello(userName, age) {
+//   if (age === undefined) {
+//     age = `please enter your info`;
+//     return document.write(`Hello ${userName} Your Age is ${age}`);
+//   } else {
+//     return document.write(`Hello ${userName} Your Age is ${age}`);
+//   }
+// }
+// sayHello(`fff`);
+
+// function sayHello(userName=`Unknown`,age = `unknown`) {
+//     document.write(`Hello ${userName} Your Age Is ${age}`);
+//   }
+//   sayHello(undefined , 13);
+
+// function sumNumbers(numbers = []) {
+//   let sum = 0;
+//   for (i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+//   }
+//   return sum;
+// }
+
+// let numberLimit = +prompt("Please enter your limit number ");
+// let number = [];
+// for (i = 1; i <= numberLimit; i++) {
+//   number.push(+prompt(`Please enter number ${i}`));
+// }
+// document.write(sumNumbers(number));
+
+let yourname = prompt("please enter your name"),
+  age = +prompt(`please enter your age`),
+  hisHourPrice = +prompt("please enter your Hour Price"),
+  skillLimit = +prompt("please enter you number of skill you want to add");
+skills = [];
+for (i = 1; i <= skillLimit; i++) {
+  skills.push(prompt(`please enter your skill ${i}`));
 }
-let finalResult = `The Factorial for ${num} is : ${reslut} = ${factorial}`;
-document.write(finalResult);
+function portofolio(name, age, hisHourPrice, ...skills) {
+  let content = `<div style="padding-left:20px"> 
+<h1>Hello ${name}</h1>
+<p>Your age is ${age}</p>
+<p>Your price in one hour is ${hisHourPrice}\$</p>
+<p>Your skills is : ${skills}</p>
+  </div>`;
+  return content;
+}
+document.write(portofolio(yourname, age, hisHourPrice, ...skills));

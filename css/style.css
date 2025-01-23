@@ -219,3 +219,18 @@ img {
 .parent p{
   margin: 0;
 } */
+.design {
+  border: 2px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+.design h1 {
+  color: #333;
+  font-size: 24px;
+}
+
+.design p {
+  color: #666;
+  font-size: 16px;
+}
