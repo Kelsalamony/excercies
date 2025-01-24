@@ -292,8 +292,8 @@
   If Challenge
 */
 
-let holidays = 10;
-let money = 0;
+// let holidays = 10;
+// let money = 0;
 
 // switch (holidays) {
 //   case 0:
@@ -939,39 +939,39 @@ let money = 0;
 //       : "Invalid input"; // Default message when no condition matches
 //   return console.log(result);
 // }
-function showDetails(a, b, c) {
-  let name, age, availability;
-  
-  if (typeof a === "string" && typeof b === "number" && typeof c === "boolean") {
-    name = a;
-    age = b;
-    availability = c;
-  } else if (typeof b === "string" && typeof a === "number" && typeof c === "boolean") {
-    name = b;
-    age = a;
-    availability = c;
-  } else if (typeof c === "string" && typeof b === "number" && typeof a === "boolean") {
-    name = c;
-    age = b;
-    availability = a;
-  } else if (typeof c === "string" && typeof a === "number" && typeof b === "boolean") {
-    name = c;
-    age = a;
-    availability = b;
-  } else {
-    return console.log("Invalid input");
-  }
+// function showDetails(a, b, c) {
+//   let name, age, availability;
 
-  let result = `Hello ${name}, Your Age Is ${age}, ${availability ? "Available" : "Not Available"}`;
-  return console.log(result);
-}
+//   if (typeof a === "string" && typeof b === "number" && typeof c === "boolean") {
+//     name = a;
+//     age = b;
+//     availability = c;
+//   } else if (typeof b === "string" && typeof a === "number" && typeof c === "boolean") {
+//     name = b;
+//     age = a;
+//     availability = c;
+//   } else if (typeof c === "string" && typeof b === "number" && typeof a === "boolean") {
+//     name = c;
+//     age = b;
+//     availability = a;
+//   } else if (typeof c === "string" && typeof a === "number" && typeof b === "boolean") {
+//     name = c;
+//     age = a;
+//     availability = b;
+//   } else {
+//     return console.log("Invalid input");
+//   }
 
-showDetails(38, "Osama", true);  // Output: "Hello Osama, Your Age Is 38, Available"
-showDetails("Osama", 38, false); // Output: "Hello Osama, Your Age Is 38, Not Available"
-showDetails(38, "Osama", true); // "Hello Osama, Your Age Is 38, Available"
-showDetails(38, "Osama", false); // "Hello Osama, Your Age Is 38, Not Available"
-showDetails(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, Available"
-showDetails(false, "Osama", 38); // "Hello Osama, Your Age Is 38, Not Available"
+//   let result = `Hello ${name}, Your Age Is ${age}, ${availability ? "Available" : "Not Available"}`;
+//   return console.log(result);
+// }
+
+// showDetails(38, "Osama", true);  // Output: "Hello Osama, Your Age Is 38, Available"
+// showDetails("Osama", 38, false); // Output: "Hello Osama, Your Age Is 38, Not Available"
+// showDetails(38, "Osama", true); // "Hello Osama, Your Age Is 38, Available"
+// showDetails(38, "Osama", false); // "Hello Osama, Your Age Is 38, Not Available"
+// showDetails(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, Available"
+// showDetails(false, "Osama", 38); // "Hello Osama, Your Age Is 38, Not Available"
 
 // let a = 38;
 // if (typeof a === "number") {
@@ -991,3 +991,114 @@ showDetails(false, "Osama", 38); // "Hello Osama, Your Age Is 38, Not Available"
 // typeof a || typeof b || typeof c === "string"
 //   ? console.log(a)
 //   : console.log(no);
+
+// let calc =function(num1, num2){
+//   return num1 +num2
+// }
+// console.log(calc(10,20));
+
+// document.getElementById("clickMe").onclick=function(){
+//   console.log("Show  ");
+
+// }
+
+// setTimeout(function () {
+//   document.write(
+//     `<h1 style="font-size : 20px ; color: #B8C;width:300px ; margin-left:auto ; margin-right: auto">Khaled Elsalamony</h1>`
+//   );
+// }, 2000);
+
+// function sayMessage(Fname, Lname) {
+//   let message = `Heloo`;
+//   function concatMes() {
+//    let reslut= `${Fname} ${Lname}`;
+//     function getFullName() {
+//       return `${message} ${reslut}`
+//     }
+//     return getFullName();
+//   }
+//   return concatMes();
+// }
+
+// console.log(sayMessage("khaled", "mohamed"));
+
+// let calc = function (num) {
+//   return num;
+// };
+// console.log(calc(100));
+
+// let calc = (num1, num2) => {
+//   let result = num1 + num2;
+//   return result;
+// };
+// console.log(calc(10,15));
+
+// function multiply(...numbers) {
+//   let result = 1;
+//   for (i = 0; i < numbers.length; i++) {
+//     if (typeof numbers[i] === "string") continue;
+//     if (Number.isInteger(numbers[i])) {
+//       result *= numbers[i];
+//     } else {
+//       numbers[i]=Number.parseInt(numbers[i]);
+//       result *= numbers[i];
+//     }
+//   }
+//   return result;
+// }
+// console.log(multiply(100.5, 10, "B"));
+
+// var x = 10;
+// if(10===10){
+//   let x=50
+// }
+// console.log(x);
+
+/*
+  Function Arrow Challenges
+*/
+
+// [1] One Statement In Function
+// [2] Convert To Arrow Function
+// [3] Print The Output [Arguments May Change]
+
+// let names = function (...onlyNames) {
+//   return `String ${onlyNames.join(',')} => Done!`;
+// };
+
+// let names = (...onlyNames) => `String [${onlyNames.join('],[')}] => Done!`;
+
+// console.log(names("Osama", "Mohamed", "Ali", "Ibrahim"));
+// String [Osama], [Mohamed], [Ali], [Ibrahim] => Done !
+
+/* ================================= */
+
+// [1] Replace ??? In Return Statement To Get The Output
+// [2] Create The Same Function With Regular Syntax
+// [3] Use Array Inside The Arguments To Get The Output
+
+// let myNumbers = [20, 50, 10, 60];
+
+// let calc = (one, two, ...nums) => {
+
+//   return +one + +two + +nums
+// };
+
+// console.log(calc(10, 20, 50)); // 80
+
+let pushValue = document.getElementById("pushValue");
+let labelType = document.getElementById("labelType");
+let popValue = document.getElementById("popValue");
+let counter = 0;
+pushValue.onclick = function () {
+  counter += 1;
+  labelType.innerText = counter;
+};
+popValue.onclick = function () {
+  if (counter > 0) {
+    counter -= 1;
+    labelType.innerText = counter;
+  } else {
+    counter = 0;
+  }
+};
