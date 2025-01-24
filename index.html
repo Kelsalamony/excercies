@@ -185,6 +185,29 @@
     <!-- <div class="parent">
 <p>80 <strong>/100</strong></p>
 </div> -->
+    <div
+      style="
+        padding-left: 20px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 100px;
+      "
+    >
+      <button onclick="changeBackgroundColor()">Click Me</button>
+      <input
+        type="type"
+        class="colorInput"
+        placeholder="Please Select a color"
+      />
+    </div>
+
+    <script>
+      let elementInput = document.querySelector(".colorInput");
+      function changeBackgroundColor() {
+        document.body.style.backgroundColor = elementInput.value;
+      }
+    </script>
 
     <script src="js/main.js"></script>
   </body>

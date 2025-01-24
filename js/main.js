@@ -894,21 +894,100 @@ let money = 0;
 // }
 // document.write(sumNumbers(number));
 
-let yourname = prompt("please enter your name"),
-  age = +prompt(`please enter your age`),
-  hisHourPrice = +prompt("please enter your Hour Price"),
-  skillLimit = +prompt("please enter you number of skill you want to add");
-skills = [];
-for (i = 1; i <= skillLimit; i++) {
-  skills.push(prompt(`please enter your skill ${i}`));
+// let yourname = prompt("please enter your name"),
+//   age = +prompt(`please enter your age`),
+//   hisHourPrice = +prompt("please enter your Hour Price"),
+//   skillLimit = +prompt("please enter you number of skill you want to add");
+// skills = [];
+// for (i = 1; i <= skillLimit; i++) {
+//   skills.push(prompt(`please enter your skill ${i}`));
+// }
+// function portofolio(name="unkown", age="unkown", hisHourPrice="unkown", ...skills) {
+//   let content = `<div style="padding-left:20px">
+// <h1>Hello ${name}</h1>
+// <p>Your age is ${age}</p>
+// <p>Your price in one hour is $${hisHourPrice}</p>
+// <p>Your skills is : ${skills}</p>
+//   </div>`;
+//   return document.write(content);
+// }
+// portofolio(yourname, age, hisHourPrice, ...skills);
+
+/*
+  Function - Random Argument Challenge
+  ====================================
+  Create Function showDetails
+  Function Accept 3 Parameters [a, b, c]
+  Data Types For Info Is
+  - String => Name
+  - Number => Age
+  - Boolean => Status
+  Argument Is Random
+  Data Is Not Sorted Output Depend On Data Types
+  - Use Ternary Conditional Operator
+*/
+// function showDetails(a, b, c) {
+//   let result =
+//     typeof a === "number" && typeof b === "string" && typeof c === "boolean"
+//       ? `Hello ${b}, Your Age Is ${a}, ${c ? "Available" : "Not Available"}`
+//       : typeof b === "number" && typeof a === "string" && typeof c === "boolean"
+//       ? `Hello ${a}, Your Age Is ${b}, ${c ? "Available" : "Not Available"}`
+//       : typeof c === "number" && typeof b === "string" && typeof a === "boolean"
+//       ? `Hello ${b}, Your Age Is ${c}, ${a ? "Available" : "Not Available"}`
+//       : typeof c === "string" && typeof a === "number" && typeof b === "boolean"
+//       ? `Hello ${c}, Your Age Is ${a}, ${b ? "Available" : "Not Available"}`
+//       : "Invalid input"; // Default message when no condition matches
+//   return console.log(result);
+// }
+function showDetails(a, b, c) {
+  let name, age, availability;
+  
+  if (typeof a === "string" && typeof b === "number" && typeof c === "boolean") {
+    name = a;
+    age = b;
+    availability = c;
+  } else if (typeof b === "string" && typeof a === "number" && typeof c === "boolean") {
+    name = b;
+    age = a;
+    availability = c;
+  } else if (typeof c === "string" && typeof b === "number" && typeof a === "boolean") {
+    name = c;
+    age = b;
+    availability = a;
+  } else if (typeof c === "string" && typeof a === "number" && typeof b === "boolean") {
+    name = c;
+    age = a;
+    availability = b;
+  } else {
+    return console.log("Invalid input");
+  }
+
+  let result = `Hello ${name}, Your Age Is ${age}, ${availability ? "Available" : "Not Available"}`;
+  return console.log(result);
 }
-function portofolio(name, age, hisHourPrice, ...skills) {
-  let content = `<div style="padding-left:20px"> 
-<h1>Hello ${name}</h1>
-<p>Your age is ${age}</p>
-<p>Your price in one hour is ${hisHourPrice}\$</p>
-<p>Your skills is : ${skills}</p>
-  </div>`;
-  return content;
-}
-document.write(portofolio(yourname, age, hisHourPrice, ...skills));
+
+showDetails(38, "Osama", true);  // Output: "Hello Osama, Your Age Is 38, Available"
+showDetails("Osama", 38, false); // Output: "Hello Osama, Your Age Is 38, Not Available"
+showDetails(38, "Osama", true); // "Hello Osama, Your Age Is 38, Available"
+showDetails(38, "Osama", false); // "Hello Osama, Your Age Is 38, Not Available"
+showDetails(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, Available"
+showDetails(false, "Osama", 38); // "Hello Osama, Your Age Is 38, Not Available"
+
+// let a = 38;
+// if (typeof a === "number") {
+//   console.log(a);
+// }
+// let b = true;
+// if (typeof b === "boolean") {
+//   console.log(b); // true
+// }
+// let c = "khaled";
+// if (typeof c === "string") {
+//   console.log(c);
+// }
+// let a = 38;
+// let b = "khaled";
+// let c = 25;
+// typeof a || typeof b || typeof c === "string"
+//   ? console.log(a)
+//   : console.log(no);
